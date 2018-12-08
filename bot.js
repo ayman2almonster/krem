@@ -22,7 +22,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`LastCodes   ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'sets')) {
+  if (message.content.startsWith(adminprefix + 'amm')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
       message.channel.send(`LastCodes`)
   }
