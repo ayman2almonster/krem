@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "-";
-var adminprefix = '-'
+var prefix = "!";
+var adminprefix = '!'
 const developers = ["433324096156336150"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -22,7 +22,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`LastCodes   ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'amm')) {
+  if (message.content.startsWith(adminprefix + 'str')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
       message.channel.send(`LastCodes`)
   }
